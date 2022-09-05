@@ -17,8 +17,10 @@ module.exports = {
     },
     ecmaVersion: "latest",
     sourceType: "module",
-    project: ["./tsconfig.json"],
+    project: "./tsconfig.json",
   },
   plugins: ["react", "@typescript-eslint"],
-  rules: {},
+  rules: {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+  },
 };
